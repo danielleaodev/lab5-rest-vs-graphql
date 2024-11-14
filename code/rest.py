@@ -21,7 +21,8 @@ def get_user_repos():
     response = requests.get(url, headers=headers)
     end_time = time.time()
 
-    response_time = (end_time - start_time) * 1000
+    response_time = (end_time - start_time) * 1000 
+    response_size = len(response.content)
 
     print('API REST')
     print(f'Tempo de Resposta: {response_time:.2f} ms')

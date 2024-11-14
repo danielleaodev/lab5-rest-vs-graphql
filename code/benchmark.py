@@ -31,7 +31,7 @@ def run_script(script_name):
 
         return {'time': time_ms, 'size': size_bytes}
 
-def run_benchmark(iterations=5):
+def run_benchmark(iterations=50):
     print('Executando Benchmark...\n')
 
     rest_times = []

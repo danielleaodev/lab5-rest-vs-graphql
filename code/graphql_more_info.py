@@ -14,15 +14,39 @@ def get_user_repos():
         'Authorization': f'Bearer {token}',
         'Content-Type': 'application/json',
     }
-
+    
     query = f'''
     query {{
         user(login: "{username}") {{
-            repositories(first: 100, orderBy: {{field: UPDATED_AT, direction: DESC}}, ownerAffiliations: OWNER) {{
+            repositories(first: 100, orderBy: {{field: UPDATED_AT, direction: DESC}}) {{
                 nodes {{
+                    id
                     name
                     description
                     url
+                    createdAt
+                    updatedAt
+                    pushedAt
+                    forkCount
+                    stargazerCount
+                    isPrivate
+                    isArchived
+                    isDisabled
+                    licenseInfo {{
+                        name
+                    }}
+                    visibility
+                    defaultBranchRef {{
+                        name
+                    }}
+                    
+                    owner {{
+                        avatarUrl
+                        id
+                        login
+                        resourcePath
+                        url
+                    }}
                 }}
             }}
         }}
@@ -56,7 +80,22 @@ def get_repo_prs():
             pullRequests(first: 30, orderBy: {field: UPDATED_AT, direction: DESC}) {
                 nodes {
                     title
+                    body
                     url
+                    createdAt
+                    updatedAt
+                    mergedAt
+                    state
+                    author {
+                        login
+                        url
+                    }
+                    comments {
+                        totalCount
+                    }
+                    reviews {
+                        totalCount
+                    }
                 }
             }
         }

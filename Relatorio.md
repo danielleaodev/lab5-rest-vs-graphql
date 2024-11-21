@@ -17,10 +17,11 @@ Este trabalho tem como objetivo comparar o desempenho de APIs GraphQL e REST em 
 ### Ameaças à Validade
 
 Algumas ameaças à validade foram identificadas.
-- Internas:
-    - Variabilidade no desempenho do servidor ou da rede que possa impactar os tempos de resposta, o que foi mitigado com um grande número de consultas para cada API (1000) e iteração entre os tipos de consulta
-- Externas:
-    - Generalização dos resultados para outros ambientes ou APIs distintas. Por isso, os resultados são apresentados dentro do contexto específico do experimento.
+
+-   Internas:
+    -   Variabilidade no desempenho do servidor ou da rede que possa impactar os tempos de resposta, o que foi mitigado com um grande número de consultas para cada API (1000) e iteração entre os tipos de consulta
+-   Externas:
+    -   Generalização dos resultados para outros ambientes ou APIs distintas. Por isso, os resultados são apresentados dentro do contexto específico do experimento.
 
 ## Metodologia
 
@@ -63,11 +64,19 @@ Após a execução do experimento, foram obtidos os seguintes resultados médios
 | GraphQL 1        | 491.53                       | 2121.50                           |
 | GraphQL 2        | 1196.21                      | 24341.00                          |
 
+![Tamanho da Resposta (bytes) por tipo de consulta](./plot/size_boxplot.png)
+
+![Tempo de Resposta (ms) por tipo de consulta](./plot/time_boxplot.png)
+
 ## Discussão
 
-Os resultados obtidos mostram diferenças claras entre o desempenho das APIs REST e GraphQL no que se refere tanto ao tempo de resposta quanto ao tamanho das respostas.
+Os resultados obtidos mostram diferenças claras entre o desempenho das APIs REST e GraphQL no que se refere tanto ao tempo de resposta quanto ao tamanho das respostas, confirmando a  Hipótese Alternativa definida.
+
+### RQ1: As respostas das consultas GraphQL são mais rápidas que as respostas das consultas REST?
 
 Em relação ao tempo de resposta, a API GraphQL apresentou desempenho superior à API REST na consulta básica (GraphQL 1), com um tempo médio de resposta de 491,53 ms, enquanto a API REST teve um tempo médio de resposta de 618,49 ms. Esse resultado pode ser atribuído à flexibilidade da GraphQL, que permite retornar apenas os campos específicos solicitados, reduzindo a quantidade de processamento necessário para consultas simples. Entretanto, na consulta mais complexa (GraphQL 2), que solicita um número maior de campos, o tempo médio de resposta aumentou significativamente para 1.196,21 ms. Isso sugere que, embora a GraphQL seja mais eficiente para consultas otimizadas, sua performance pode ser impactada negativamente por consultas complexas que exigem maior processamento no servidor.
+
+### RQ2: As respostas das consultas GraphQL têm tamanho menor que as respostas das consultas REST?
 
 Quanto ao tamanho da resposta, a diferença é ainda mais evidente. A API REST retornou respostas muito maiores (602.294 bytes em média) em comparação com a consulta GraphQL 1 (2.121,50 bytes em média). Essa discrepância ocorre porque, na API REST, o endpoint retorna todos os dados disponíveis de forma fixa, independentemente da necessidade do cliente. Já a GraphQL permite maior controle sobre os dados retornados, retornando apenas os campos solicitados, o que resulta em respostas significativamente menores. A consulta GraphQL 2, ao solicitar mais campos, teve um tamanho médio de resposta maior (24.341 bytes), mas ainda assim muito menor do que o da API REST.
 

@@ -18,7 +18,7 @@ def get_user_repos():
     query = f'''
     query {{
         user(login: "{username}") {{
-            repositories(first: 100, orderBy: {{field: UPDATED_AT, direction: DESC}}, ownerAffiliations: OWNER) {{
+            repositories(first: 30, orderBy: {{field: UPDATED_AT, direction: DESC}}, ownerAffiliations: OWNER) {{
                 nodes {{
                     name
                     description

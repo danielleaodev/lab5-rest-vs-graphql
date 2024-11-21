@@ -8,14 +8,12 @@ Hipótese Nula (H0): Não há diferença significativa entre o tempo de resposta
 
 Hipótese Alternativa (H1): Há uma diferença significativa nos tempos de resposta e tamanhos das respostas entre as APIs GraphQL e REST.
 
-
 Variáveis:
 - Dependentes:
     - Tamanho das respostas das APIs
     - Tempo de resposta das APIs
 - Independentes:
     - Tipo de API (GraphQL x REST)
-
 
 Tratamentos: Aplicar diferentes consultas para cada tipo de API, registrando o tempo de resposta e o tamanho das respostas.
 
@@ -25,7 +23,7 @@ Objetos Experimentais:
 
 Tipo de Projeto Experimental: Projeto de comparação controlada
 
-Quantidade de Medições: Realizar múltiplas consultas (ao menos 50 de cada API) para poder analisar variações nos tempos e tamanhos das respostas.
+Quantidade de Medições: Realizar múltiplas consultas (ao menos 1000 de cada API) para poder analisar variações nos tempos e tamanhos das respostas.
 
 Ameaças à Validade:
 - Internas:

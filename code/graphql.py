@@ -1,5 +1,3 @@
-# graphql.py
-
 import os
 import requests
 import time
@@ -8,7 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 token = os.getenv('GITHUB_TOKEN')
-username = 'torvalds'  
+username = 'torvalds'
 
 def get_user_repos():
     url = 'https://api.github.com/graphql'
@@ -20,7 +18,7 @@ def get_user_repos():
     query = f'''
     query {{
         user(login: "{username}") {{
-            repositories(first: 100) {{
+            repositories(first: 100, orderBy: {{field: UPDATED_AT, direction: DESC}}, ownerAffiliations: OWNER) {{
                 nodes {{
                     name
                     description
@@ -35,6 +33,7 @@ def get_user_repos():
 
     start_time = time.time()
     response = requests.post(url, json=json_data, headers=headers)
+    print(response.content)
     end_time = time.time()
 
     response_time = (end_time - start_time) * 1000 

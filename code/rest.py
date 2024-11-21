@@ -11,7 +11,7 @@ token = os.getenv('GITHUB_TOKEN')
 username = 'torvalds' 
 
 def get_user_repos():
-    url = f'https://api.github.com/users/{username}/repos?per_page=100'
+    url = f'https://api.github.com/users/{username}/repos?per_page=100&sort=updated'
     headers = {
         'Authorization': f'token {token}',
         'Accept': 'application/vnd.github.v3+json',

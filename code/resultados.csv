@@ -1,31 +1,301 @@
 Iteração,API,TIPO,Tempo de Resposta (ms),Tamanho da Resposta (bytes)
-1,REST List Repos,rest,414.94,36311
-1,GraphQL List Repos,graphql_1,406.45,1006
-1,GraphQL List Repos More Info,graphql_2,1433.74,21604
-1,REST Get Repo PRs,rest,896.34,1168277
-1,GraphQL Get Repo PRs,graphql_1,536.05,3237
-1,GraphQL Get Repo PRs More Info,graphql_2,928.11,27078
-2,REST List Repos,rest,404.41,36311
-2,GraphQL List Repos,graphql_1,407.34,1006
-2,GraphQL List Repos More Info,graphql_2,1641.02,21604
-2,REST Get Repo PRs,rest,951.58,1168277
-2,GraphQL Get Repo PRs,graphql_1,376.52,3237
-2,GraphQL Get Repo PRs More Info,graphql_2,1023.08,27078
-3,REST List Repos,rest,309.73,36311
-3,GraphQL List Repos,graphql_1,508.78,1006
-3,GraphQL List Repos More Info,graphql_2,1335.09,21604
-3,REST Get Repo PRs,rest,777.69,1168277
-3,GraphQL Get Repo PRs,graphql_1,362.63,3237
-3,GraphQL Get Repo PRs More Info,graphql_2,905.35,27078
-4,REST List Repos,rest,307.81,36311
-4,GraphQL List Repos,graphql_1,526.62,1006
-4,GraphQL List Repos More Info,graphql_2,1726.09,21604
-4,REST Get Repo PRs,rest,881.61,1168277
-4,GraphQL Get Repo PRs,graphql_1,444.89,3237
-4,GraphQL Get Repo PRs More Info,graphql_2,1026.51,27078
-5,REST List Repos,rest,302.31,36311
-5,GraphQL List Repos,graphql_1,410.89,1006
-5,GraphQL List Repos More Info,graphql_2,1433.11,21604
-5,REST Get Repo PRs,rest,900.41,1168277
-5,GraphQL Get Repo PRs,graphql_1,429.65,3237
-5,GraphQL Get Repo PRs More Info,graphql_2,818.85,27078
+1,REST List Repos,rest,297.24,36311
+1,GraphQL List Repos,graphql_1,512.00,1006
+1,GraphQL List Repos More Info,graphql_2,2559.93,21604
+1,REST Get Repo PRs,rest,892.73,1168277
+1,GraphQL Get Repo PRs,graphql_1,436.80,3237
+1,GraphQL Get Repo PRs More Info,graphql_2,818.02,27078
+2,REST List Repos,rest,413.77,36311
+2,GraphQL List Repos,graphql_1,517.73,1006
+2,GraphQL List Repos More Info,graphql_2,1423.68,21604
+2,REST Get Repo PRs,rest,844.66,1168277
+2,GraphQL Get Repo PRs,graphql_1,485.85,3237
+2,GraphQL Get Repo PRs More Info,graphql_2,928.22,27078
+3,REST List Repos,rest,402.28,36311
+3,GraphQL List Repos,graphql_1,511.01,1006
+3,GraphQL List Repos More Info,graphql_2,1639.20,21604
+3,REST Get Repo PRs,rest,789.28,1168277
+3,GraphQL Get Repo PRs,graphql_1,438.33,3237
+3,GraphQL Get Repo PRs More Info,graphql_2,823.07,27078
+4,REST List Repos,rest,302.93,36311
+4,GraphQL List Repos,graphql_1,510.41,1006
+4,GraphQL List Repos More Info,graphql_2,2464.19,21604
+4,REST Get Repo PRs,rest,790.32,1168277
+4,GraphQL Get Repo PRs,graphql_1,431.16,3237
+4,GraphQL Get Repo PRs More Info,graphql_2,922.27,27078
+5,REST List Repos,rest,410.08,36311
+5,GraphQL List Repos,graphql_1,407.60,1006
+5,GraphQL List Repos More Info,graphql_2,1231.73,21604
+5,REST Get Repo PRs,rest,883.06,1168277
+5,GraphQL Get Repo PRs,graphql_1,443.93,3237
+5,GraphQL Get Repo PRs More Info,graphql_2,922.66,27078
+6,REST List Repos,rest,305.21,36311
+6,GraphQL List Repos,graphql_1,511.45,1006
+6,GraphQL List Repos More Info,graphql_2,1545.95,21604
+6,REST Get Repo PRs,rest,717.85,1168277
+6,GraphQL Get Repo PRs,graphql_1,501.03,3237
+6,GraphQL Get Repo PRs More Info,graphql_2,819.20,27078
+7,REST List Repos,rest,407.91,36311
+7,GraphQL List Repos,graphql_1,512.58,1006
+7,GraphQL List Repos More Info,graphql_2,1330.49,21604
+7,REST Get Repo PRs,rest,777.10,1168277
+7,GraphQL Get Repo PRs,graphql_1,450.66,3237
+7,GraphQL Get Repo PRs More Info,graphql_2,923.26,27078
+8,REST List Repos,rest,406.55,36311
+8,GraphQL List Repos,graphql_1,408.96,1006
+8,GraphQL List Repos More Info,graphql_2,1433.69,21604
+8,REST Get Repo PRs,rest,889.16,1168277
+8,GraphQL Get Repo PRs,graphql_1,543.54,3237
+8,GraphQL Get Repo PRs More Info,graphql_2,819.36,27078
+9,REST List Repos,rest,511.90,36311
+9,GraphQL List Repos,graphql_1,517.56,1006
+9,GraphQL List Repos More Info,graphql_2,1324.75,21604
+9,REST Get Repo PRs,rest,786.87,1168277
+9,GraphQL Get Repo PRs,graphql_1,440.15,3237
+9,GraphQL Get Repo PRs More Info,graphql_2,1126.72,27078
+10,REST List Repos,rest,300.52,36311
+10,GraphQL List Repos,graphql_1,415.48,1006
+10,GraphQL List Repos More Info,graphql_2,1229.81,21604
+10,REST Get Repo PRs,rest,792.80,1168277
+10,GraphQL Get Repo PRs,graphql_1,433.46,3237
+10,GraphQL Get Repo PRs More Info,graphql_2,921.31,27078
+11,REST List Repos,rest,411.37,36311
+11,GraphQL List Repos,graphql_1,509.59,1006
+11,GraphQL List Repos More Info,graphql_2,1535.26,21604
+11,REST Get Repo PRs,rest,781.82,1168277
+11,GraphQL Get Repo PRs,graphql_1,446.43,3237
+11,GraphQL Get Repo PRs More Info,graphql_2,1230.78,27078
+12,REST List Repos,rest,406.79,36311
+12,GraphQL List Repos,graphql_1,409.94,1006
+12,GraphQL List Repos More Info,graphql_2,1330.72,21604
+12,REST Get Repo PRs,rest,795.48,1168277
+12,GraphQL Get Repo PRs,graphql_1,351.93,3237
+12,GraphQL Get Repo PRs More Info,graphql_2,899.76,27078
+13,REST List Repos,rest,305.50,36311
+13,GraphQL List Repos,graphql_1,410.10,1006
+13,GraphQL List Repos More Info,graphql_2,1330.86,21604
+13,REST Get Repo PRs,rest,785.89,1168277
+13,GraphQL Get Repo PRs,graphql_1,441.31,3237
+13,GraphQL Get Repo PRs More Info,graphql_2,922.60,27078
+14,REST List Repos,rest,409.29,36311
+14,GraphQL List Repos,graphql_1,491.96,1006
+14,GraphQL List Repos More Info,graphql_2,1349.90,21604
+14,REST Get Repo PRs,rest,940.33,1168277
+14,GraphQL Get Repo PRs,graphql_1,491.71,3237
+14,GraphQL Get Repo PRs More Info,graphql_2,716.78,27078
+15,REST List Repos,rest,305.06,36311
+15,GraphQL List Repos,graphql_1,616.10,1006
+15,GraphQL List Repos More Info,graphql_2,1330.79,21604
+15,REST Get Repo PRs,rest,801.53,1168277
+15,GraphQL Get Repo PRs,graphql_1,427.02,3237
+15,GraphQL Get Repo PRs More Info,graphql_2,818.90,27078
+16,REST List Repos,rest,305.38,36311
+16,GraphQL List Repos,graphql_1,514.19,1006
+16,GraphQL List Repos More Info,graphql_2,1432.10,21604
+16,REST Get Repo PRs,rest,780.69,1168277
+16,GraphQL Get Repo PRs,graphql_1,413.49,3237
+16,GraphQL Get Repo PRs More Info,graphql_2,1056.43,27078
+17,REST List Repos,rest,306.37,36311
+17,GraphQL List Repos,graphql_1,511.77,1006
+17,GraphQL List Repos More Info,graphql_2,1229.07,21604
+17,REST Get Repo PRs,rest,711.59,1168277
+17,GraphQL Get Repo PRs,graphql_1,417.04,3237
+17,GraphQL Get Repo PRs More Info,graphql_2,918.93,27078
+18,REST List Repos,rest,306.42,36311
+18,GraphQL List Repos,graphql_1,510.38,1006
+18,GraphQL List Repos More Info,graphql_2,1332.09,21604
+18,REST Get Repo PRs,rest,818.63,1168277
+18,GraphQL Get Repo PRs,graphql_1,513.43,3237
+18,GraphQL Get Repo PRs More Info,graphql_2,715.33,27078
+19,REST List Repos,rest,408.41,36311
+19,GraphQL List Repos,graphql_1,512.01,1006
+19,GraphQL List Repos More Info,graphql_2,2047.60,21604
+19,REST Get Repo PRs,rest,1291.01,1168277
+19,GraphQL Get Repo PRs,graphql_1,415.61,3237
+19,GraphQL Get Repo PRs More Info,graphql_2,1467.25,27078
+20,REST List Repos,rest,305.05,36311
+20,GraphQL List Repos,graphql_1,512.77,1006
+20,GraphQL List Repos More Info,graphql_2,1480.61,21604
+20,REST Get Repo PRs,rest,850.03,1168277
+20,GraphQL Get Repo PRs,graphql_1,431.85,3237
+20,GraphQL Get Repo PRs More Info,graphql_2,819.92,27078
+21,REST List Repos,rest,307.94,36311
+21,GraphQL List Repos,graphql_1,512.31,1006
+21,GraphQL List Repos More Info,graphql_2,1227.32,21604
+21,REST Get Repo PRs,rest,1159.24,1168277
+21,GraphQL Get Repo PRs,graphql_1,580.32,3237
+21,GraphQL Get Repo PRs More Info,graphql_2,818.52,27078
+22,REST List Repos,rest,306.69,36311
+22,GraphQL List Repos,graphql_1,614.83,1006
+22,GraphQL List Repos More Info,graphql_2,1228.88,21604
+22,REST Get Repo PRs,rest,808.91,1168277
+22,GraphQL Get Repo PRs,graphql_1,419.84,3237
+22,GraphQL Get Repo PRs More Info,graphql_2,919.66,27078
+23,REST List Repos,rest,409.23,36311
+23,GraphQL List Repos,graphql_1,409.38,1006
+23,GraphQL List Repos More Info,graphql_2,1227.57,21604
+23,REST Get Repo PRs,rest,897.49,1168277
+23,GraphQL Get Repo PRs,graphql_1,438.91,3237
+23,GraphQL Get Repo PRs More Info,graphql_2,916.66,27078
+24,REST List Repos,rest,305.68,36311
+24,GraphQL List Repos,graphql_1,511.30,1006
+24,GraphQL List Repos More Info,graphql_2,1439.30,21604
+24,REST Get Repo PRs,rest,875.68,1168277
+24,GraphQL Get Repo PRs,graphql_1,448.61,3237
+24,GraphQL Get Repo PRs More Info,graphql_2,1127.77,27078
+25,REST List Repos,rest,305.17,36311
+25,GraphQL List Repos,graphql_1,409.05,1006
+25,GraphQL List Repos More Info,graphql_2,1331.17,21604
+25,REST Get Repo PRs,rest,882.43,1168277
+25,GraphQL Get Repo PRs,graphql_1,449.42,3237
+25,GraphQL Get Repo PRs More Info,graphql_2,1227.22,27078
+26,REST List Repos,rest,337.54,36311
+26,GraphQL List Repos,graphql_1,480.74,1006
+26,GraphQL List Repos More Info,graphql_2,1538.08,21604
+26,REST Get Repo PRs,rest,784.40,1168277
+26,GraphQL Get Repo PRs,graphql_1,440.76,3237
+26,GraphQL Get Repo PRs More Info,graphql_2,922.27,27078
+27,REST List Repos,rest,408.03,36311
+27,GraphQL List Repos,graphql_1,512.34,1006
+27,GraphQL List Repos More Info,graphql_2,1637.30,21604
+27,REST Get Repo PRs,rest,992.34,1168277
+27,GraphQL Get Repo PRs,graphql_1,441.25,3237
+27,GraphQL Get Repo PRs More Info,graphql_2,820.21,27078
+28,REST List Repos,rest,410.00,36311
+28,GraphQL List Repos,graphql_1,509.93,1006
+28,GraphQL List Repos More Info,graphql_2,1433.59,21604
+28,REST Get Repo PRs,rest,1021.55,1168277
+28,GraphQL Get Repo PRs,graphql_1,614.40,3237
+28,GraphQL Get Repo PRs More Info,graphql_2,929.33,27078
+29,REST List Repos,rest,301.23,36311
+29,GraphQL List Repos,graphql_1,509.41,1006
+29,GraphQL List Repos More Info,graphql_2,1331.59,21604
+29,REST Get Repo PRs,rest,888.16,1168277
+29,GraphQL Get Repo PRs,graphql_1,374.86,3237
+29,GraphQL Get Repo PRs More Info,graphql_2,885.49,27078
+30,REST List Repos,rest,410.86,36311
+30,GraphQL List Repos,graphql_1,509.86,1006
+30,GraphQL List Repos More Info,graphql_2,1465.53,21604
+30,REST Get Repo PRs,rest,963.86,1168277
+30,GraphQL Get Repo PRs,graphql_1,758.44,3237
+30,GraphQL Get Repo PRs More Info,graphql_2,869.32,27078
+31,REST List Repos,rest,379.89,36311
+31,GraphQL List Repos,graphql_1,589.01,1006
+31,GraphQL List Repos More Info,graphql_2,1320.34,21604
+31,REST Get Repo PRs,rest,903.58,1168277
+31,GraphQL Get Repo PRs,graphql_1,528.31,3237
+31,GraphQL Get Repo PRs More Info,graphql_2,923.98,27078
+32,REST List Repos,rest,303.94,36311
+32,GraphQL List Repos,graphql_1,408.86,1006
+32,GraphQL List Repos More Info,graphql_2,1542.50,21604
+32,REST Get Repo PRs,rest,775.19,1168277
+32,GraphQL Get Repo PRs,graphql_1,427.81,3237
+32,GraphQL Get Repo PRs More Info,graphql_2,841.96,27078
+33,REST List Repos,rest,278.18,36311
+33,GraphQL List Repos,graphql_1,541.03,1006
+33,GraphQL List Repos More Info,graphql_2,1223.92,21604
+33,REST Get Repo PRs,rest,788.01,1168277
+33,GraphQL Get Repo PRs,graphql_1,438.59,3237
+33,GraphQL Get Repo PRs More Info,graphql_2,832.58,27078
+34,REST List Repos,rest,396.52,36311
+34,GraphQL List Repos,graphql_1,409.02,1006
+34,GraphQL List Repos More Info,graphql_2,1332.98,21604
+34,REST Get Repo PRs,rest,681.10,1168277
+34,GraphQL Get Repo PRs,graphql_1,441.89,3237
+34,GraphQL Get Repo PRs More Info,graphql_2,1024.06,27078
+35,REST List Repos,rest,409.20,36311
+35,GraphQL List Repos,graphql_1,613.92,1006
+35,GraphQL List Repos More Info,graphql_2,1332.16,21604
+35,REST Get Repo PRs,rest,901.32,1168277
+35,GraphQL Get Repo PRs,graphql_1,529.70,3237
+35,GraphQL Get Repo PRs More Info,graphql_2,921.86,27078
+36,REST List Repos,rest,308.60,36311
+36,GraphQL List Repos,graphql_1,512.68,1006
+36,GraphQL List Repos More Info,graphql_2,1327.46,21604
+36,REST Get Repo PRs,rest,1221.78,1168277
+36,GraphQL Get Repo PRs,graphql_1,518.84,3237
+36,GraphQL Get Repo PRs More Info,graphql_2,817.99,27078
+37,REST List Repos,rest,409.67,36311
+37,GraphQL List Repos,graphql_1,511.07,1006
+37,GraphQL List Repos More Info,graphql_2,1433.20,21604
+37,REST Get Repo PRs,rest,786.53,1168277
+37,GraphQL Get Repo PRs,graphql_1,441.90,3237
+37,GraphQL Get Repo PRs More Info,graphql_2,819.30,27078
+38,REST List Repos,rest,306.15,36311
+38,GraphQL List Repos,graphql_1,510.98,1006
+38,GraphQL List Repos More Info,graphql_2,1433.55,21604
+38,REST Get Repo PRs,rest,860.37,1168277
+38,GraphQL Get Repo PRs,graphql_1,469.66,3237
+38,GraphQL Get Repo PRs More Info,graphql_2,820.27,27078
+39,REST List Repos,rest,408.92,36311
+39,GraphQL List Repos,graphql_1,510.60,1006
+39,GraphQL List Repos More Info,graphql_2,1251.45,21604
+39,REST Get Repo PRs,rest,1037.57,1168277
+39,GraphQL Get Repo PRs,graphql_1,456.45,3237
+39,GraphQL Get Repo PRs More Info,graphql_2,1648.26,27078
+40,REST List Repos,rest,315.27,36311
+40,GraphQL List Repos,graphql_1,430.88,1006
+40,GraphQL List Repos More Info,graphql_2,1239.24,21604
+40,REST Get Repo PRs,rest,851.26,1168277
+40,GraphQL Get Repo PRs,graphql_1,447.81,3237
+40,GraphQL Get Repo PRs More Info,graphql_2,921.81,27078
+41,REST List Repos,rest,270.38,36311
+41,GraphQL List Repos,graphql_1,423.27,1006
+41,GraphQL List Repos More Info,graphql_2,1122.29,21604
+41,REST Get Repo PRs,rest,789.28,1168277
+41,GraphQL Get Repo PRs,graphql_1,551.87,3237
+41,GraphQL Get Repo PRs More Info,graphql_2,1038.08,27078
+42,REST List Repos,rest,307.06,36311
+42,GraphQL List Repos,graphql_1,920.92,1006
+42,GraphQL List Repos More Info,graphql_2,1638.09,21604
+42,REST Get Repo PRs,rest,798.15,1168277
+42,GraphQL Get Repo PRs,graphql_1,429.74,3237
+42,GraphQL Get Repo PRs More Info,graphql_2,924.14,27078
+43,REST List Repos,rest,304.68,36311
+43,GraphQL List Repos,graphql_1,510.80,1006
+43,GraphQL List Repos More Info,graphql_2,1639.04,21604
+43,REST Get Repo PRs,rest,782.24,1168277
+43,GraphQL Get Repo PRs,graphql_1,445.88,3237
+43,GraphQL Get Repo PRs More Info,graphql_2,819.10,27078
+44,REST List Repos,rest,408.56,36311
+44,GraphQL List Repos,graphql_1,511.86,1006
+44,GraphQL List Repos More Info,graphql_2,1433.61,21604
+44,REST Get Repo PRs,rest,790.45,1168277
+44,GraphQL Get Repo PRs,graphql_1,538.93,3237
+44,GraphQL Get Repo PRs More Info,graphql_2,921.75,27078
+45,REST List Repos,rest,307.19,36311
+45,GraphQL List Repos,graphql_1,612.75,1006
+45,GraphQL List Repos More Info,graphql_2,1536.17,21604
+45,REST Get Repo PRs,rest,881.21,1168277
+45,GraphQL Get Repo PRs,graphql_1,449.75,3237
+45,GraphQL Get Repo PRs More Info,graphql_2,1023.53,27078
+46,REST List Repos,rest,409.34,36311
+46,GraphQL List Repos,graphql_1,455.40,1006
+46,GraphQL List Repos More Info,graphql_2,976.82,21604
+46,REST Get Repo PRs,rest,694.11,1168277
+46,GraphQL Get Repo PRs,graphql_1,535.04,3237
+46,GraphQL Get Repo PRs More Info,graphql_2,1022.92,27078
+47,REST List Repos,rest,305.87,36311
+47,GraphQL List Repos,graphql_1,409.35,1006
+47,GraphQL List Repos More Info,graphql_2,1127.07,21604
+47,REST Get Repo PRs,rest,898.49,1168277
+47,GraphQL Get Repo PRs,graphql_1,431.62,3237
+47,GraphQL Get Repo PRs More Info,graphql_2,818.80,27078
+48,REST List Repos,rest,306.32,36311
+48,GraphQL List Repos,graphql_1,512.83,1006
+48,GraphQL List Repos More Info,graphql_2,1227.57,21604
+48,REST Get Repo PRs,rest,789.52,1168277
+48,GraphQL Get Repo PRs,graphql_1,439.76,3237
+48,GraphQL Get Repo PRs More Info,graphql_2,932.83,27078
+49,REST List Repos,rest,396.37,36311
+49,GraphQL List Repos,graphql_1,462.52,1006
+49,GraphQL List Repos More Info,graphql_2,1380.63,21604
+49,REST Get Repo PRs,rest,812.86,1168277
+49,GraphQL Get Repo PRs,graphql_1,414.98,3237
+49,GraphQL Get Repo PRs More Info,graphql_2,1024.44,27078
+50,REST List Repos,rest,511.76,36311
+50,GraphQL List Repos,graphql_1,509.59,1006
+50,GraphQL List Repos More Info,graphql_2,1331.87,21604
+50,REST Get Repo PRs,rest,789.20,1168277
+50,GraphQL Get Repo PRs,graphql_1,437.98,3237
+50,GraphQL Get Repo PRs More Info,graphql_2,923.06,27078

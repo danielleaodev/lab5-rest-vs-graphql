@@ -1,4 +1,4 @@
-# Lab5_GraphQLxREST
+# Laboratório 5 - GraphQL x REST
 
 - Daniel Leão
 - Juliana Serra
@@ -37,4 +37,4 @@ Ameaças à Validade:
 
 No arquivo [resultados.csv](resultados.csv) temos todos os retornos das requisições
 
-E no arquivo [médias.md](médias.md), temos a média de tempo e tamanho da resposta, dividos pela API. Informações que são printadas ao fim da execução.
+E no arquivo [averages.csv](averages.csv), temos a média de tempo e tamanho da resposta, dividos por API e tipo de consulta.

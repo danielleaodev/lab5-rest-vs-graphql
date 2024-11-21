@@ -31,6 +31,7 @@ def get_interfaces_info(type_name):
     json_data = {'query': query}
 
     response = requests.post(url, json=json_data, headers=headers)
+    print(response.content)
 
 if __name__ == '__main__':
     try:

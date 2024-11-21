@@ -2,6 +2,7 @@ import csv
 import rest
 import graphql
 import graphql_more_info
+import time
 
 def run_script(function_name, identifier):
  
@@ -48,12 +49,13 @@ def run_benchmark(iterations=50):
         writer.writeheader()
 
         for i in range(iterations):
+            time.sleep(3)
             print(f'Iteração {i+1} de {iterations}')
 
-            for api_name, api_type, api_function, time, size in apis:
+            for api_name, api_type, api_function, times, size in apis:
                 try:
                     result = run_script(api_function, f'{api_name}.get_user_repos')
-                    time.append(result['time'])
+                    times.append(result['time'])
                     size.append(result['size'])
                     
                     writer.writerow({
@@ -68,9 +70,9 @@ def run_benchmark(iterations=50):
                     continue
 
     if rest_times and graphql_times and graphql_more_info_times and rest_prs_times and graphql_prs_times and graphql_more_info_prs_times:
-        for api_name, api_type, api_function, time, size in apis:
+        for api_name, api_type, api_function, times, size in apis:
             print(f'\nAPI {api_name}')
-            avg_time = sum(time) / len(time) if time else 0
+            avg_time = sum(times) / len(times) if times else 0
             avg_size = sum(size) / len(size) if size else 0
             print(f'Tempo Médio de Resposta: {avg_time:.2f} ms')
             print(f'Tamanho Médio da Resposta: {avg_size:.2f} bytes')
@@ -79,6 +81,6 @@ def run_benchmark(iterations=50):
 
 if __name__ == '__main__':
     try:
-        run_benchmark()
+        run_benchmark(1000)
     except Exception as e:
         print(f'Erro durante o benchmark: {e}')

@@ -16,7 +16,7 @@ def get_user_repos():
     }
 
     start_time = time.time()
-    response = requests.get(url, headers=headers)
+    response = requests.get(url, headers=headers, timeout=100)
     end_time = time.time()
 
     response_time = (end_time - start_time) * 1000 
@@ -25,9 +25,9 @@ def get_user_repos():
     if (response.status_code != 200):
         return { 'status_code': response.status_code }
 
-    print('API REST')
-    print(f'Tempo de Resposta: {response_time:.2f} ms')
-    print(f'Tamanho da Resposta: {response_size} bytes')
+    # print('API REST')
+    # print(f'Tempo de Resposta: {response_time:.2f} ms')
+    # print(f'Tamanho da Resposta: {response_size} bytes')
     return { 'time': response_time, 'size': response_size, 'status_code': response.status_code }
     
 def get_repo_prs():
@@ -38,15 +38,15 @@ def get_repo_prs():
     }
 
     start_time = time.time()
-    response = requests.get(url, headers=headers)
+    response = requests.get(url, headers=headers, timeout=100)
     end_time = time.time()
 
     response_time = (end_time - start_time) * 1000 
     response_size = len(response.content)
 
-    print('API REST')
-    print(f'Tempo de Resposta: {response_time:.2f} ms')
-    print(f'Tamanho da Resposta: {response_size} bytes')
+    # print('API REST')
+    # print(f'Tempo de Resposta: {response_time:.2f} ms')
+    # print(f'Tamanho da Resposta: {response_size} bytes')
     return { 'time': response_time, 'size': response_size, 'status_code': response.status_code }
 
 if __name__ == '__main__':

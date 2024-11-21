@@ -32,15 +32,15 @@ def get_user_repos():
     json_data = {'query': query}
 
     start_time = time.time()
-    response = requests.post(url, json=json_data, headers=headers)
+    response = requests.post(url, json=json_data, headers=headers, timeout=100)
     end_time = time.time()
 
     response_time = (end_time - start_time) * 1000 
     response_size = len(response.content)
 
-    print('API GraphQL')
-    print(f'Tempo de Resposta: {response_time:.2f} ms')
-    print(f'Tamanho da Resposta: {response_size} bytes')
+    # print('API GraphQL')
+    # print(f'Tempo de Resposta: {response_time:.2f} ms')
+    # print(f'Tamanho da Resposta: {response_size} bytes')
     return { 'time': response_time, 'size': response_size, 'status_code': response.status_code }
 
 def get_repo_prs():
@@ -66,15 +66,15 @@ def get_repo_prs():
     json_data = {'query': query}
 
     start_time = time.time()
-    response = requests.post(url, json=json_data, headers=headers)
+    response = requests.post(url, json=json_data, headers=headers, timeout=100)
     end_time = time.time()
 
     response_time = (end_time - start_time) * 1000 
     response_size = len(response.content)
 
-    print('API GraphQL')
-    print(f'Tempo de Resposta: {response_time:.2f} ms')
-    print(f'Tamanho da Resposta: {response_size} bytes')
+    # print('API GraphQL')
+    # print(f'Tempo de Resposta: {response_time:.2f} ms')
+    # print(f'Tamanho da Resposta: {response_size} bytes')
     return { 'time': response_time, 'size': response_size, 'status_code': response.status_code }
 
 

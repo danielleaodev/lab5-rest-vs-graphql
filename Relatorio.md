@@ -25,7 +25,7 @@ Algumas ameaças à validade foram identificadas.
 
 ## Metodologia
 
-Para este experimento, foram desenvolvidos scripts automatizados para executar endpoints das APIs GraphQL e REST, com o objetivo de realizar consultas e medir o tempo de resposta e o tamanho das respostas das APIs. A variável independente considerada foi o tipo de API (GraphQL ou REST), enquanto as variáveis dependentes foram o tempo de resposta, medido em milissegundos, e o tamanho das respostas, medido em bytes.
+Para este experimento, foram desenvolvidos scripts automatizados para executar endpoints das APIs GraphQL e REST do GitHub, com o objetivo de realizar consultas e medir o tempo de resposta e o tamanho das respostas das APIs. As variáveis independentes consideradas foram o tipo de API (GraphQL ou REST) e o tipo de consulta realizada, enquanto as variáveis dependentes foram o tempo de resposta, medido em milissegundos, e o tamanho das respostas, medido em bytes.
 
 O experimento foi realizado por meio de múltiplas medições, totalizando 1000 consultas para cada tipo de API, com o objetivo de obter uma amostra significativa para análise estatística.
 
